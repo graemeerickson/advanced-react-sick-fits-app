@@ -1,14 +1,27 @@
-![Advanced React & GraphQL](https://advancedreact.com/images/ARG/arg-facebook-share.png)
-
-# Advanced React & GraphQL
-
-These are the starter files and stepped solutions for the [Advanced React & GraphQL](https://AdvancedReact.com) course by [Wes Bos](https://WesBos.com/).
-
-## Getting Help
-
-The best place to get help is in the #advanced-react slack room - there is a link in your course dashboard.
-
-## FAQ
-
-**Q:** Which Extensions for VS Code is Wes using?  
-**A:** All my extensions are listed on [my dotfiles repo](https://github.com/wesbos/dotfiles), but specifically this course uses [ESLint](https://github.com/Microsoft/vscode-eslint) and [Prettier](https://github.com/prettier/prettier-vscode).
+## Tech Stack
+### Frontend
+ - **React.js** *for building the interface*
+   - **Next.js** *for server-side rendering, routing, & tooling*
+   - **Styled components** *for styling*
+   - **React-Apollo** *for interfacing with Apollo Client*
+ - **Apollo Client** *for data management*
+   - Performing GraphQL mutations
+   - Fetching GraphQL queries
+   - Caching GraphQL data
+   - Managing local state
+   - Error and Loading UI states
+   - Replaces the need for Redux + data fetching/caching libraries
+### Backend
+ - **GraphQL Yoga** *Express GraphQL server*
+   - Implementing Query and Mutation Resolvers
+   - Custom server-side logic
+   - Charging credit cards
+   - Sending email
+   - Performing JWT authentication
+   - Checking permissions
+ - **Prisma** *GraphQL Database interface*
+   - Provides GraphQL CRUD APIs for MySQL or Postgres database
+   - Schema definition
+   - Data relationships
+   - Queried directly from GraphQL Yoga server
+   - Self-hosted or as-a-service
